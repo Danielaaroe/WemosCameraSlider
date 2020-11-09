@@ -1,4 +1,8 @@
+/*
 
+
+ESP8266WebServer - Part of code revolving the ESP8266WebServer is partly sampled and greatly inspired by the solution proposed by Pieter P in "A Beguinner's Guide to the ESP8266" - Thanks.
+*/
 //OLED DISPLAY//////////////////////////////////////////////////////////
 #include <Adafruit_SSD1306.h> //remember that this library must be installed through library manager. Remember to use the Wemos D1 mini version.
 
@@ -191,8 +195,6 @@ void setSliderSpeed() {
   }
   }
 */
-
-
 
 //WEB PAGES//////////////////////////////////////////////////////////// Note that all the \ in the HTML is to cancel out the following " in order to create a continous string.
 //NOTE THAT HTML STRINGS MAY ONLY BE DECLARED AT THE TOP OF THE SKETCH IF THEY ARE CONSTANT. IF VARIABLES ARE TO BE INCLUDED, THEY MUST BE UPDATED SOMEWHERE AFTER COMPILE TIME.
