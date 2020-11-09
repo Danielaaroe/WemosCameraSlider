@@ -46,7 +46,6 @@ bool webMode = LOW;
 
 void setup()
 {
-
   delay(1000);
   //SERIAL PORT//
   Serial.begin(115200);
@@ -86,7 +85,7 @@ void setup()
 
 void loop()
 {
-  webMode = (analogRead(speedPin) < 100); //set webmode if potmeter is turned all the way to the left.
+  webMode = (analogRead(speedPin) < 10); //set webmode if potmeter is turned all the way to the left.
   server.handleClient();
   setSliderSpeed();
   updateDisplay();
